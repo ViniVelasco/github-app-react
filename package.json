@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js",
+    "start": "webpack-dashboard -- node server.js ",
     "build": "webpack --progress --config webpack.prod.config -p"
   },
   "devDependencies": {
