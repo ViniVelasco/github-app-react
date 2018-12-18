@@ -54,5 +54,11 @@ module.exports = validate({
       include: /src/,
       loader: ExtractTextPlugin.extract('style', 'css')
     }]
+  },
+  resolve: {
+    alias: {
+      src: path.join(__dirname, 'src'),
+      components: path.join(__dirname, 'src', 'components')
+    }
   }
 })
