@@ -15,7 +15,7 @@ module.exports = validate({
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name]-[hash].js' 
+    filename: '[name]-[hash].js'
   },
 
   plugins: [
@@ -41,7 +41,7 @@ module.exports = validate({
       template: path.join(__dirname, 'src', 'html', 'template.html')
     })
   ],
- 
+
   module: {
     preLoaders: [{
       test: /\.js$/,

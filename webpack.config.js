@@ -28,13 +28,13 @@ module.exports = validate({
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(),
     new ExtractTextPlugin('[name]-[hash].css'),
-    
+
     new HtmlPlugin({
       title: 'Github app',
       template: path.join(__dirname, 'src', 'html', 'template-dev.html')
     })
   ],
- 
+
   module: {
     preLoaders: [{
       test: /\.js$/,
